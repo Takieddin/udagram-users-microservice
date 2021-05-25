@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ta9i/udagram-user-node-udacity
+  name: udagram-user-node-udacity
   labels:
-    app: ta9i/udagram-user-node-udacity
+    app: udagram-user-node-udacity
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ta9i/udagram-user-node-udacity
+      app: udagram-user-node-udacity
   template:
     metadata:
       labels:
-        app: ta9i/udagram-user-node-udacity
+        app: udagram-user-node-udacity
     spec:
       containers:
       - name: udagram-user-node-udacity
