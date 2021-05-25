@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 80
 
 # Define Docker’s behavior when the image is  run
-CMD ["node", "server.ts"]
+CMD ["node", "./src/server.ts"]
