@@ -16,7 +16,7 @@ COPY . .
 
 
 # Set the API’s port number
-EXPOSE 8080
+EXPOSE 80
 
 # Define Docker’s behavior when the image is  run
-CMD ["node", "server.js"]
+CMD ["node", "./src/server.js"]
