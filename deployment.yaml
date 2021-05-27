@@ -18,4 +18,4 @@ spec:
       - name: udagram-user-node-udacity
         image: ta9i/udagram-user-node-udacity
         ports:
-        - containerPort: 80
+        - containerPort: 8080
