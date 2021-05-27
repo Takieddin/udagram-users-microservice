@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t udagram-user-node-udacity  --build-arg POSTGRES_USERNAME=${argPOSTGRES_USERNAME} --build-arg POSTGRES_PASSWORD=${argPOSTGRES_PASSWORD} --build-arg POSTGRES_HOST=${argPOSTGRES_HOST} --build-arg POSTGRES_DB=${argPOSTGRES_DB} --build-arg AWS_BUCKET=${argAWS_BUCKET} --build-arg AWS_REGION=${argAWS_REGION} --build-arg AWS_PROFILE=${argAWS_PROFILE} --build-arg JWT_SECRET=${argJWT_SECRET} --build-arg URL=${argURL} .
+  - docker build -t udagram-user-node-udacity  --build-arg argPOSTGRES_USERNAME=${POSTGRES_USERNAME} --build-arg argPOSTGRES_PASSWORD=${POSTGRES_PASSWORD} --build-arg argPOSTGRES_HOST=${POSTGRES_HOST} --build-arg argPOSTGRES_DB=${POSTGRES_DB} --build-arg argAWS_BUCKET=${AWS_BUCKET} --build-arg argAWS_REGION=${AWS_REGION} --build-arg argAWS_PROFILE=${AWS_PROFILE} --build-arg argJWT_SECRET=${JWT_SECRET} --build-arg argURL=${URL} .
  .
   - docker images
   - docker tag udagram-user-node-udacity ta9i/udagram-user-node-udacity
